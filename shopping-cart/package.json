@@ -30,7 +30,6 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "no-unused-vars": "off",
     "extends": [
       "react-app",
       "react-app/jest"

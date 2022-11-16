@@ -7,7 +7,6 @@ import { Wrapper } from "../Item/Item.styles";
 type Props = {
     item: CartItemType;
     handleAddtoCart: (clickedItem: CartItemType) => void;
-
 }
 
 const Item: React.FC<Props> = ({ item, handleAddtoCart }) => (
@@ -19,7 +18,7 @@ const Item: React.FC<Props> = ({ item, handleAddtoCart }) => (
             <p>{item.description}</p>
             <p>${item.price}</p>
         </div>
-        <button onClick={() => handleAddtoCart(item)}>Add to cart</button>
+        <Button onClick={() => handleAddtoCart(item)}>Add to cart</Button>
     </Wrapper>
 )
 
